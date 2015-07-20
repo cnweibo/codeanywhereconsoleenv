@@ -12,5 +12,6 @@
 	r1 = reset HEAD~1
 	co = checkout
 	rs = remote show
+	showf = show --pretty=format: --name-only
 [push]
 	default = matching
