@@ -14,7 +14,7 @@
 	ci = commit -m
 	r1 = reset HEAD~1
 	co = checkout
-	dev = checkout checkout
+	dev = checkout develop
 	master = checkout master
 	rs = remote show
 	fl = flow feature list
