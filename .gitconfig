@@ -23,6 +23,7 @@
 	fon = flow feature checkout 
 	fdel = flow feature delete
 	showf = show --pretty=format: --name-only
+	fhistory = log --
 	fadded = git log --diff-filter=A --
 [push]
 	default = matching
