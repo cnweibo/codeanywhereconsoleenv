@@ -8,7 +8,7 @@
 	ui = auto
 [alias]
 	lg = log --oneline --decorate --all --graph
-	s = status -v
+	s = status -s
 	a = add
 	r = reset
 	ci = commit -m
