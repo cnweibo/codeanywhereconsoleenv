@@ -23,7 +23,14 @@
 	fon = flow feature checkout 
 	fdel = flow feature delete
 	showf = show --pretty=format: --name-only
+	conflicts = diff --name-only --diff-filter=U
+	checkignore = check-ignore -v
+	branchstatus = branch -vv -a 
+	filterauthor = log --author
+	filtercommit = log --oneline --grep
+	showfilehistory = log --follow
+	changedby = blame -w 
 	fhistory = log --
-	fadded = git log --diff-filter=A --
+	faddedat = log --diff-filter=A --
 [push]
 	default = matching
