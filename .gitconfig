@@ -33,4 +33,4 @@
 	fhistory = log --
 	faddedat = log --diff-filter=A --
 [push]
-	default = matching
+	default = simple
