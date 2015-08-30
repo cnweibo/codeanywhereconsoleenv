@@ -32,6 +32,7 @@
 	changedby = blame -w 
 	fhistory = log --
 	faddedat = log --diff-filter=A --
+	checkupdate = remote show
 [push]
 	default = simple
 [pull]
