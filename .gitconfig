@@ -39,3 +39,5 @@
         rebase = true
 [rerere]
 	enabled = true
+[merge "ours"]
+	driver = true
