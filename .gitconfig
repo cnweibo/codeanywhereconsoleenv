@@ -35,7 +35,7 @@
 	checkupdate = remote show
 	ignoretracked = update-index --assume-unchanged
 	unignoretracked = update-index --no-assume-unchanged
-	checkignoretracked = ls-files -v|grep
+	checkignoretracked = ls-files -v|grep '^h'
 	alias = config --get-regexp alias
 [push]
 	default = simple
