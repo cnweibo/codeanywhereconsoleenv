@@ -33,6 +33,9 @@
 	fhistory = log --
 	faddedat = log --diff-filter=A --
 	checkupdate = remote show
+	ignoretracked = update-index --assume-unchanged
+	unignoretracked = update-index --no-assume-unchanged
+	checkignoretracked = git ls-files -v|grep
 [push]
 	default = simple
 [pull]
