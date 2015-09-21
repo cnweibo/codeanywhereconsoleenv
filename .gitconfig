@@ -37,6 +37,7 @@
 	unignoretracked = update-index --no-assume-unchanged
 	checkignoretracked = ls-files -v|grep '^h'
 	alias = config --get-regexp alias
+	dw = diff --word-diff --cache
 [push]
 	default = simple
 [pull]
