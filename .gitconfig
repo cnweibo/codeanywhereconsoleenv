@@ -14,6 +14,7 @@
 	ci = commit -m
 	r1 = reset HEAD~1
 	co = checkout
+	cof = checkout --
 	dev = checkout develop
 	master = checkout master
 	rs = remote show
