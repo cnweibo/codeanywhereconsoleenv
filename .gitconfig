@@ -33,7 +33,7 @@
 	changedby = blame -w 
 	fhistory = log --
 	faddedat = log --diff-filter=A --
-	checkupdate = remote show
+	cu = remote show
 	ignoretracked = update-index --assume-unchanged
 	unignoretracked = update-index --no-assume-unchanged
 	checkignoretracked = ls-files -v|grep '^h'
@@ -42,7 +42,7 @@
 [push]
 	default = simple
 [pull]
-        rebase = true
+        rebase = preserve
 [rerere]
 	enabled = true
 [merge "ours"]
