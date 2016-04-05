@@ -39,6 +39,7 @@
 	checkignoretracked = ls-files -v|grep '^h'
 	alias = config --get-regexp alias
 	dw = diff --word-diff
+	db = diff --name-only
 [push]
 	default = simple
 [pull]
