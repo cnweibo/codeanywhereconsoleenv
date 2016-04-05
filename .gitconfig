@@ -48,3 +48,14 @@
 	enabled = true
 [merge "ours"]
 	driver = true
+[diff]
+    tool = DiffMerge
+[difftool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+[merge]
+    tool = DiffMerge
+[mergetool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
+    trustExitCode = true
+[mergetool]
+    keepBackup = false
