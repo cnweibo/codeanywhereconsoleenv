@@ -37,7 +37,8 @@
 	#forget local change
 	flc = update-index --assume-unchanged
 	uflc = update-index --no-assume-unchanged
-	checkignoretracked = ls-files -v|grep '^h'
+	lflc = ls-files -v|grep '^h'
+	stash = stash -u
 	alias = config --get-regexp alias
 	dw = diff --word-diff
 	db = diff --name-only
