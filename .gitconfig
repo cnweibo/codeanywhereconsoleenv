@@ -37,15 +37,16 @@
 	#forget local change
 	flc = update-index --assume-unchanged
 	uflc = update-index --no-assume-unchanged
-	lflc = ls-files -v|grep '^h'
+	#list forget local changes
+	lflc = ! git ls-files -v|grep '^h'
 	stash = stash -u
 	alias = config --get-regexp alias
 	dw = diff --word-diff
 	db = diff --name-only
 	#not merged commits list on master
-	nmclm = rev-list --all --not master --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
+	nmclm = ! git rev-list --all --not master --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}' 
 	#not merged commits list on develop
-	nmclm = rev-list --all --not develop --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
+	nmcld = ! git rev-list --all --not develop --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
 	# commit hash for which branch(para: hashID)?
 	cfb = name-rev --name-only 
 [push]
