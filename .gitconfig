@@ -34,8 +34,9 @@
 	fhistory = log --
 	faddedat = log --diff-filter=A --
 	cu = remote show
-	ignoretracked = update-index --assume-unchanged
-	unignoretracked = update-index --no-assume-unchanged
+	#forget local change
+	flc = update-index --assume-unchanged
+	uflc = update-index --no-assume-unchanged
 	checkignoretracked = ls-files -v|grep '^h'
 	alias = config --get-regexp alias
 	dw = diff --word-diff
