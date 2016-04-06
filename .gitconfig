@@ -42,6 +42,12 @@
 	alias = config --get-regexp alias
 	dw = diff --word-diff
 	db = diff --name-only
+	#not merged commits list on master
+	nmclm = rev-list --all --not master --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
+	#not merged commits list on develop
+	nmclm = rev-list --all --not develop --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
+	# commit hash for which branch(para: hashID)?
+	cfb = name-rev --name-only 
 [push]
 	default = simple
 [pull]
