@@ -49,13 +49,15 @@
 [merge "ours"]
 	driver = true
 [diff]
-    tool = DiffMerge
-[difftool "DiffMerge"]
-    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+    tool = bc2
+[difftool]
+    prompt = false
+[difftool "bc2"]
+    cmd =  'd:/GBackup/softwareback/BeyondCompare2/Beyond Compare 2/BC2.exe' "$LOCAL" "$REMOTE"
 [merge]
-    tool = DiffMerge
-[mergetool "DiffMerge"]
-    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
-    trustExitCode = true
+    tool = bc2
 [mergetool]
-    keepBackup = false
+    prompt = false
+[mergetool "bc2"]
+    #trustExitCode = true
+    cmd = 'd:/GBackup/softwareback/BeyondCompare2/Beyond Compare 2/BC2.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
