@@ -49,6 +49,8 @@
 	nmcld = ! git rev-list --all --not develop --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
 	# commit hash for which branch(para: hashID)?
 	cfb = name-rev --name-only 
+	# return branch tip commit
+	btc = rev-parse
 [push]
 	default = simple
 [pull]
