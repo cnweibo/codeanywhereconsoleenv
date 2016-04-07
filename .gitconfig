@@ -49,8 +49,11 @@
 	nmcld = ! git rev-list --all --not develop --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
 	# commit hash for which branch(para: hashID)?
 	cfb = name-rev --name-only 
-	# return branch tip commit
+	# return branch tip commit :parameter: <branch>
 	btc = rev-parse
+	# return base ancestor commit <branch> <branchedOffBranch> 
+	bac = merge-base
+	
 [push]
 	default = simple
 [pull]
