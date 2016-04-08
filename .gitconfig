@@ -16,7 +16,8 @@
 	ci = commit -m
 	r1 = reset HEAD~1
 	co = checkout
-	cof = checkout --
+	# create a local branch for remote tracking <upstream/branch>
+	cot = checkout --track
 	dev = checkout develop
 	master = checkout master
 	rs = remote show
