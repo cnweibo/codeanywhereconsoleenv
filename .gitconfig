@@ -33,7 +33,10 @@
 	changedby = blame -w 
 	fhistory = log --
 	faddedat = log --diff-filter=A --
-	cu = remote show
+	# check update info against remote
+	rs = remote show
+	# change the remote repo url
+	rsu = remote set-url
 	#forget local change
 	flc = update-index --assume-unchanged
 	uflc = update-index --no-assume-unchanged
@@ -53,6 +56,7 @@
 	btc = rev-parse
 	# return base ancestor commit <branch> <branchedOffBranch> 
 	bac = merge-base
+	
 	
 [push]
 	default = simple
