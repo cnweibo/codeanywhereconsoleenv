@@ -8,6 +8,8 @@
 	ui = true
 [alias]
 	lg = log --oneline --decorate --all --graph
+	# log with simplified  only first parent is listed
+	lgs = log --oneline --decorate --all --graph --first-parent
 	s = status -sb
 	a = add
 	r = reset
