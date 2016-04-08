@@ -58,7 +58,8 @@
 	btc = rev-parse
 	# return base ancestor commit <branch> <branchedOffBranch> 
 	bac = merge-base
-	
+	# find tag for a commit <commit>
+	tfc = describe --tags
 	
 [push]
 	default = simple
