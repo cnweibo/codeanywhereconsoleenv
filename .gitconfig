@@ -22,14 +22,14 @@
 	master = checkout master
 	rs = remote show
 	fl = flow feature list
-        fs = flow feature start
-	ff = flow feature finish
+        fs = flow feature start --showcommands
+	ff = flow feature finish --showcommands
 	hl = flow hotfix list
-	hs = flow hotfix start
-	hf = flow hotfix finish
+	hs = flow hotfix start --showcommands
+	hf = flow hotfix finish --showcommands
 	rell = flow release list
-	rels = flow release start
-	relf = flow release finish	
+	rels = flow release start --showcommands
+	relf = flow release finish --showcommands	
 	fon = flow feature checkout 
 	fdel = flow feature delete
 	showf = show --pretty=format: --name-only
