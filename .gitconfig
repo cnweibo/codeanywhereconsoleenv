@@ -51,7 +51,8 @@
 	uflc = update-index --no-assume-unchanged
 	#list forget local changes
 	lflc = ! git ls-files -v|grep '^h'
-	stash = stash -u
+	trash = stash -u
+	sweepout = ! git stash && git stash clear
 	alias = config --get-regexp alias
 	dw = diff --word-diff
 	db = diff --name-only
