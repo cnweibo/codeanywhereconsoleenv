@@ -21,15 +21,22 @@
 	dev = checkout develop
 	master = checkout master
 	rs = remote show
-	fl = flow feature list
+	fl = flow feature list -v
         fs = flow feature start --showcommands
 	ff = flow feature finish --showcommands
-	hl = flow hotfix list
+	hl = flow hotfix list -v
 	hs = flow hotfix start --showcommands
 	hf = flow hotfix finish --showcommands
-	rell = flow release list
+	rell = flow release list -v
 	rels = flow release start --showcommands
 	relf = flow release finish --showcommands	
+	bl = flow bugfix list -v
+	bs = flow bugfix start --showcommands
+	bf = flow bugfix finish --showcommands	
+	sl = flow support list -v
+	ss = flow support start --showcommands
+	sf = flow support finish --showcommands	
+	flowlog = flow log --showcommands
 	fon = flow feature checkout 
 	fdel = flow feature delete
 	showf = show --pretty=format: --name-only
