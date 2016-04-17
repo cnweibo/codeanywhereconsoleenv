@@ -4,6 +4,7 @@
 [core]
 	autocrlf = true
 	filemode = false
+	longpaths = true
 [color]
 	ui = true
 [alias]
