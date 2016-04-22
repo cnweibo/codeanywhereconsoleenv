@@ -77,6 +77,8 @@
 	bac = merge-base
 	# find tag for a commit <commit>
 	tfc = describe --tags
+	# cancel a in-progress merge(normally will with a conflict)
+	ma = merge --abort
 	
 [push]
 	default = simple
