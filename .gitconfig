@@ -10,6 +10,7 @@
 	ui = true
 [alias]
 	lg = log --oneline --decorate --all --graph
+	lga = log --oneline --all --decorate --graph --pretty=format:"%h %an %s"
 	# log with simplified  only first parent is listed
 	lgs = log --oneline --decorate --all --graph --first-parent
 	s = status -sb
