@@ -70,6 +70,9 @@
 	nmclm = ! git rev-list --all --not master --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}' 
 	#not merged commits list on develop
 	nmcld = ! git rev-list --all --not develop --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}'
+	#refresh completely for the index and working directory 
+	# refer to the https://help.github.com/articles/dealing-with-line-endings/ for lineending knowhow
+	refreshall = ! git rm --cached -r . && git reset --hard
 	# commit hash for which branch(para: hashID)?
 	cfb = name-rev --name-only 
 	# return branch tip commit :parameter: <branch>
