@@ -66,6 +66,7 @@
 	alias = config --get-regexp alias
 	dw = diff --word-diff
 	db = diff --name-only
+	dt = difftool	
 	#not merged commits list on master
 	nmclm = ! git rev-list --all --not master --no-merges | xargs -L1 git name-rev | grep -E '[0-9a-f]{40}' 
 	#not merged commits list on develop
