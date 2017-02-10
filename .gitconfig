@@ -9,6 +9,10 @@
 [color]
 	ui = true
 [alias]
+        # git show-branch stock-information staging/master master // will list all diffrent commits in both branches
+	diffbranches = show-branch 
+	# git log --oneline --no-merges master..dev // list all commits which are on dev but not merged to master
+	nonmerged = log --oneline --no-merges 
 	lg = log --oneline --decorate --all --graph
 	lga = log --oneline --all --decorate --graph --pretty=format:"%h %an %s"
 	# log with simplified  only first parent is listed
